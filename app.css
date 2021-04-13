@@ -1,0 +1,249 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family:Tahoma, sans-serif;
+  background-color:#F2F4F7; ;
+}
+
+.wrapper{
+  margin:1.5rem 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+input{
+  
+}
+
+.wrapper h2{
+  text-align: center;
+  color:#6930c3;
+  padding: 1rem 1rem;
+}
+
+input[type=text], input[type=tel], input[type=email]{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 30px;
+  padding-left: 12px;
+}
+
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus{
+  outline: none;
+}
+
+
+
+.input-group{
+  position: relative;
+  text-align: center;
+}
+
+.input-group .input-box:first-child .fa.fa-user.icon{
+  position:absolute;
+  top:17%;
+  right:17%;
+
+}
+
+.input-group .input-box:last-child .fa.fa-user.icon{
+  position:absolute;
+  bottom:18%;
+  right:17%;
+
+}
+
+.fa.fa-envelope{
+  position: absolute;
+  top: 35%;
+  right:17%;
+}
+
+.fa.fa-credit-card.icon{
+  position: absolute;
+  bottom: 37%;
+  left: 79%;
+}
+
+
+
+form > h4{
+  text-align: center;
+  color: #393e46;
+  padding: 1rem 2rem 2rem;
+  
+  
+}
+
+
+.input-box .name{
+  height: 2.2rem;
+  margin:0.7rem 0;
+  width: 70%;
+  border: 3px solid #6930c3;
+  border-radius: 4px;
+  
+}
+
+.input-box > h4{
+  text-align: left;
+  color: #393e46;
+  margin-top: 1.3rem;
+  margin-bottom:0.7rem;
+  padding-left: 3.5rem;
+  
+
+}
+
+label{
+  padding: 0.5rem 0.4rem;
+  }
+
+.dob{
+  padding:2px;
+  width: 22%;
+  height: 1.7rem;
+  border: 3px solid #6930c3;
+  border-radius: 4px;
+}
+
+.input-group:nth-child(7){
+  display: flex;
+  
+  
+}
+input::placeholder{
+padding:10px 0; 
+}
+
+.input-group:nth-child(7) .input-box:first-child input{
+  width: 45%;
+  height: 2.2rem;
+  margin-left:0;
+  border: 3px solid #6930c3;
+  border-radius: 4px;
+}
+
+.input-group:nth-child(7) .input-box:first-child{
+  position: relative;
+}
+
+.input-group:nth-child(7) .input-box:first-child .fa.fa-user.icon{
+  position: absolute;
+  bottom:-8px;
+  left: 45%;
+}
+
+.input-group:nth-child(7) .input-box:last-child{
+ position: absolute;
+ 
+ right: 15%;
+}
+
+
+
+.input-group:nth-child(7) .input-box:last-child select{
+  height: 2.2rem;
+  padding: 0 0.2rem;
+  border: 3px solid #6930c3;
+  border-radius: 4px;
+}
+
+button{
+  width: 72%;
+  margin-top: 1.9rem;
+  padding: 0.7rem 1.6rem;
+  background-color: #6930c3;
+  color: #F2F4F7;
+  border-radius: 6px;
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+button:hover{
+  background-color: #845ec2;
+  color: white;
+  box-shadow:0 0.5em 0.5em -0.4em #f1ff5c;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+
+@media (min-width: 410px){
+ 
+  .input-group:nth-child(7) .input-box:first-child input{
+    width: 53%;
+    height: 2.2rem;
+    margin-left:0.9rem ;
+    
+    border-radius: 4px;
+  }
+  .input-group:nth-child(7) .input-box:first-child .fa.fa-user.icon{
+    position: absolute;
+    bottom:18px;
+    right:21%;
+  }
+}
+
+@media (min-width: 560px){
+  .input-group:nth-child(7) .input-box:first-child input{
+    width: 60%;
+    height: 2.2rem;
+    margin-left:3.8rem;
+    border-radius: 4px;
+  }
+  .input-group:nth-child(7) .input-box:first-child .fa.fa-user.icon{
+    position: absolute;
+    bottom:18px;
+    right: -25%;
+  }
+
+  .input-box > h4{
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 760px){
+  .input-group:nth-child(7) .input-box:first-child input{
+    width: 69%;
+    height: 2.2rem;
+    margin-left:6rem;
+    border-radius: 4px;
+  }
+  .input-group:nth-child(7) .input-box:first-child .fa.fa-user.icon{
+    position: absolute;
+    bottom:18px;
+    right: -25%;
+  }
+
+  .input-box > h4{
+    padding-left: 6.2rem;
+  }
+
+}
+
+@media (min-width: 990px){
+  .input-group:nth-child(7) .input-box:first-child input{
+    width: 70%;
+    height: 2.2rem;
+    margin-left:6.2rem;
+    border-radius: 4px;
+  }
+  .input-group:nth-child(7) .input-box:first-child .fa.fa-user.icon{
+    position: absolute;
+    bottom:18px;
+    right: -45%;
+  }
+
+  .input-box > h4{
+    padding-left: 6.2rem;
+  }
+
+}
